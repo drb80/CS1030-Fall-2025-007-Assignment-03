@@ -1,0 +1,28 @@
+<!-- what version of HTML is being used? -->
+<html>
+<body>
+
+<!-- what does script do? -->
+<script>
+
+  <!-- why let instead of var or const? ? -->
+  let count=0;
+  function up() {
+    count++;
+    <!-- what does getElementById do? -->
+    document.getElementById('replaceMe').innerHTML=count;
+  }
+
+</script>
+
+<!-- any reason to choose span over div here? -->
+<span id=replaceMe>0</span>
+
+<!-- why return false? -->
+<form onsubmit="return false">
+  <!-- what happens when the user clicks? -->
+  <input type="submit" value="+" onclick="up()">
+</form>
+
+</body>
+</html>
